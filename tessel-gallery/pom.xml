@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.github.exlirixsoftware</groupId>
+        <artifactId>tessel-fx-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>tessel-fx-gallery</artifactId>
+    <name>Tessel Gallery</name>
+    <description>Demo application showing every Tessel control and component.</description>
+
+    <properties>
+        <!--
+            The gallery is the part you run, so it is built for the JDK that goes with the JavaFX version (parent POM):
+            JavaFX 26 needs JDK 24 or newer, and editors choose the JDK to run it with from this release level. The
+            library (tessel-fx) keeps targeting Java 17. Lower this together with javafx.version, for example
+            -Djavafx.version=21.0.11 -Djava.release=17 (a property from the command line overrides this one too).
+        -->
+        <java.release>26</java.release>
+        <!-- the demo app is not part of a release: no Central upload, no javadoc jar -->
+        <skipPublishing>true</skipPublishing>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.github.exlirixsoftware</groupId>
+            <artifactId>tessel-fx</artifactId>
+        </dependency>
+        <!-- only for the screenshots option of the gallery (SwingFXUtils) -->
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Implementation-Title>Tessel Gallery</Implementation-Title>
+                            <Implementation-Version>${project.version}</Implementation-Version>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- mvn -pl tessel-gallery javafx:run   (after mvn install, or run from the IDE) -->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>net.tessel.fx.gallery/net.tessel.fx.gallery.TesselGallery</mainClass>
+                    <options>
+                        <option>--enable-native-access=javafx.graphics</option>
+                    </options>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

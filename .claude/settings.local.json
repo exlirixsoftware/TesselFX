@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/jurca/.m2/repository/net/tessel/**)",
+      "Bash(sed -n '/<dependencies>/,/<\\\\/dependencies>/p' ~/.m2/repository/net/tessel/tessel-fx/1.0.0/tessel-fx-1.0.0.pom)",
+      "Bash(python -)",
+      "Bash(unzip -l tessel-fx/target/tessel-fx-1.0.0.jar)",
+      "Bash(awk '{print $6, $7, $9}')"
+    ]
+  }
+}

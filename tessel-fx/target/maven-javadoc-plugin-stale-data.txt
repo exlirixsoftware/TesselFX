@@ -1,0 +1,53 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+@argfile
+--class-path
+'C:/Users/jurca/.m2/repository/org/openjfx/javafx-controls/26.0.2/javafx-controls-26.0.2.jar;C:/Users/jurca/.m2/repository/org/openjfx/javafx-graphics/26.0.2/javafx-graphics-26.0.2.jar;C:/Users/jurca/.m2/repository/org/openjfx/javafx-base/26.0.2/javafx-base-26.0.2.jar'
+--module-path
+'C:/Users/jurca/.m2/repository/org/openjfx/javafx-base/26.0.2/javafx-base-26.0.2-win.jar;C:/Users/jurca/.m2/repository/org/openjfx/javafx-graphics/26.0.2/javafx-graphics-26.0.2-win.jar;E:/Storage/Projects/Apps/Tessel-Project/TesselFX/tessel-fx/target/tessel-fx-1.0.0.jar;C:/Users/jurca/.m2/repository/org/openjfx/javafx-controls/26.0.2/javafx-controls-26.0.2-win.jar'
+--patch-module
+net.tessel.fx='E:/Storage/Projects/Apps/Tessel-Project/TesselFX/tessel-fx/src/main/java;E:/Storage/Projects/Apps/Tessel-Project/TesselFX/tessel-fx/target/generated-sources/annotations'
+-encoding
+'UTF-8'
+-protected
+-quiet
+--release
+26
+--module-source-path
+'E:/Storage/Projects/Apps/Tessel-Project/TesselFX/tessel-fx/target/reports/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'E:/Storage/Projects/Apps/Tessel-Project/TesselFX/tessel-fx/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:all,-missing
+-doctitle
+'Tessel for JavaFX 1.0.0 API'
+-use
+-version
+-windowtitle
+'Tessel for JavaFX 1.0.0 API'
+net.tessel.fx.icons
+net.tessel.fx.components
+net.tessel.fx
+'E:/Storage/Projects/Apps/Tessel-Project/TesselFX/tessel-fx/src/main/java/module-info.java'
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\element-list = 1792431784000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\constant-values.html = 1792431784000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\overview-tree.html = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\allclasses-index.html = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\allpackages-index.html = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\module-search-index.js = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\package-search-index.js = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\type-search-index.js = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\member-search-index.js = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\tag-search-index.js = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\index-all.html = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\search.html = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\index.html = 1792431786000
+E:\Storage\Projects\Apps\Tessel-Project\TesselFX\tessel-fx\target\reports\apidocs\help-doc.html = 1792431786000
