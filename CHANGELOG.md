@@ -72,6 +72,7 @@ DialogPane (`Alert`, `Dialog`).
 
 - A Maven build (parent POM, `tessel-fx` library module, `tessel-gallery` demo) with JavaFX from Maven Central
   (`javafx.version`, 26.0.2 by default); `mvn -pl tessel-gallery javafx:run` starts the gallery.
+- The library's class files target Java 17, so it runs on JDK 17+ with JavaFX 21 or newer; the gallery targets Java 26.
 - **Gallery** with 15 pages: Home, Buttons, Inputs, Selection, Collections, Menus, Feedback, Dialogs, Pickers, Files,
   Tabs, Layout, Palette, Icons and Settings. `--screenshots=<dir>` writes a PNG of every page in both themes.
 

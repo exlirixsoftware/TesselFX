@@ -85,12 +85,11 @@ versions unless snapshots are enabled for the namespace in the Portal.
 dependencies { implementation("io.github.exlirixsoftware:tessel-fx:1.0.0") }
 ```
 
-## Things to decide before the first release
+## Java and JavaFX levels
 
-- **Java level.** `java.release` in the parent POM is currently `26`, so the published jar contains Java 26 bytecode and only
-  JDK 26 can use it. JavaFX 26 itself needs JDK 24+, but a library that targets Java 17 also serves projects on JavaFX 21 to 25.
-  To publish for Java 17, set `<java.release>17</java.release>` in `tessel-fx/pom.xml` (the module's own properties override the
-  parent) - the build is verified with it - and keep 26 in the gallery. Note that editors such as VS Code may then show errors
-  in the library module, because JavaFX 26's class files are newer than Java 17; Maven builds are not affected.
+- **Java level.** `java.release` is `17` in `tessel-fx/pom.xml` (the module's own properties override the `26` of the parent POM),
+  so the published jar runs on JDK 17+ and also serves projects on JavaFX 21 to 25. The gallery stays on 26. Note that editors such
+  as VS Code may show errors in the library module, because JavaFX 26's class files are newer than Java 17; Maven builds are not
+  affected.
 - **JavaFX version.** The published POM depends on `javafx-controls` `26.0.2`. Consumers on another JavaFX version declare their
   own `javafx-controls` version, which wins.
