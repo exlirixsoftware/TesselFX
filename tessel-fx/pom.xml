@@ -14,6 +14,11 @@
     <name>Tessel for JavaFX</name>
     <description>The Tessel style sheet, theme engine and components for JavaFX (Java module net.tessel.fx).</description>
 
+    <properties>
+        <!-- Overrides the parent's 26 so the published jar runs on JDK 17+ and serves projects on JavaFX 21 to 25; the gallery stays on 26. -->
+        <java.release>17</java.release>
+    </properties>
+
     <dependencies>
         <!-- javafx-graphics and javafx-base come in transitively; module-info.java requires them through javafx.controls -->
         <dependency>
