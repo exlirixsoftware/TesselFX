@@ -1,3 +1,4 @@
+![logo](res/javafx.png)
 # TesselFX
 
 A modern, themeable design system for **JavaFX**, matching the design of [Tessel.NET](../Tessel.NET), [Tessel4J](../Tessel4J) and [Tessel.js](../Tessel.js).
